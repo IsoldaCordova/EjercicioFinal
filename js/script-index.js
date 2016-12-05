@@ -2,12 +2,13 @@
 $(document).ready(function(){
 	$('.js-back').hide();
 });
-$(document).ready( function(){
+$(document).ready( function(printNews){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-
+	$('#news').text("NUEVAS RECETAS");
 });
+
 
 
 /*
@@ -16,6 +17,7 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+
 }
 
 /*
